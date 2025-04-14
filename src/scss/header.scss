@@ -1,0 +1,123 @@
+@import './common/vars';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $_blue;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba($_blue, 0.8);
+  z-index: 100;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 24px;
+}
+
+.nav {
+  display: none;
+}
+
+.header-burger {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  border: 1px solid $_orange;
+}
+
+.header-burger-img {
+  width: 16px;
+  height: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-wrapper {
+    width: 1440px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+
+  .nav {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 189px;
+    padding-right: 189px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    position: relative;
+    color: $_white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: $_orange;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+
+      visibility: visible;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 180px;
+      background-color: $_orange;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    &.active::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &.active::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .header-burger {
+    display: none;
+  }
+}

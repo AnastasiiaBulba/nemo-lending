@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sweet Jam: Candy & Jelly Match is a fun and addictive match-3 puzzle game! Swap, match, and blast delicious candies in hundreds of exciting levels. Play now!"
+    />
+    <meta
+      name="keywords"
+      content="Sweet Jam, match-3 puzzle, candy game, jelly matching, casual game, puzzle adventure, mobile game, free to play, fun and relaxing, offline game"
+    />
+    <meta name="author" content="Sweet Jam Dev Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gamepowerpath.com" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/assets/fav_500-49a88a0c.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,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"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqua match</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <script type="module" crossorigin src="/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modal-a4a4770d.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-0d4ab8a2.js">
+    <link rel="stylesheet" href="/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/assets/styles-bf6b4dc4.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-wrapper">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#game" class="nav-link">Game Description</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#player" class="nav-link">Player Reviews</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="header-burger" data-modal-open>
+      <img
+        width="16"
+        height="12"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7dRBDYAwDAXQ360CNgdzAJKwgAIkECTgCAk4GAhYRlnAQi/ru+zfmqzNJ4icc2DmpdY6QsdZSpn5Td77VQZPUOScu92XA5QR0dCGyxfs0LfRn2TvSZ4EHUeM8YLpTjs4KxlNVjKmL1YyVjIJOlrJPNluS7vbO0EkAAAAAElFTkSuQmCC"
+        alt="Burger button"
+        class="header-burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+    <div id="modal" class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <button type="button" class="back-button is-hidden" data-modal-close>
+      <img
+        width="16"
+        height="12"
+        src="../img/x-btn.png"
+        alt="burger-button"
+        class="back-img"
+      />
+    </button>
+
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="/" class="modal-nav-link">Home</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#game" class="modal-nav-link">Game Description</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#faq" class="modal-nav-link">FAQ</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#player" class="modal-nav-link">Player Reviews</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#gallery" class="modal-nav-link">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a
+          href="./privacy-policy.html"
+          class="footer-nav-link footer-modal-nav-link"
+          >Privacy policy</a
+        >
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./terms.html" class="footer-footer-nav-link"
+          >Terms and Conditions</a
+        >
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./cookies.html" class="footer-footer-nav-link"
+          >Cookies Policy</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <section class="hero">
+  <div class="hero-wrapper-dop">
+    <div class="hero-wrapper">
+      <p class="hero-text">Match, Decorate & Build Your Dream Aquarium!</p>
+      <div class="wrap-img">
+        <img
+          class="hero-img-nemo"
+          src="/assets/hero-nemo-5c175c5a.png"
+          alt="Image fish Nemo"
+        />
+        <img
+          class="hero-img-fish"
+          src="/assets/hero-pish-bc6a645b.png"
+          alt="Image two fish"
+        />
+      </div>
+      <button class="hero-btn" href="#" rel="noopener noreferrer">
+        <div class="hero-btn-wrap">
+          <img
+            class="hero-btn-img"
+            src="/assets/logo-google-9ea9a9ad.png"
+            alt="Google logo"
+          />
+          <img
+            class="hero-btn-text"
+            src="/assets/text-btn-db0899a2.png"
+            alt="Google Play"
+          />
+        </div>
+      </button>
+    </div>
+
+    <button class="hero-btn-two" href="#" rel="noopener noreferrer">
+      <div class="hero-btn-two-wrap">
+        <img
+          class="hero-btn-img-two"
+          src="/assets/logo-google-9ea9a9ad.png"
+          alt="Google logo"
+        />
+        <img
+          class="hero-btn-text-two"
+          src="/assets/text-btn-db0899a2.png"
+          alt="Google Play"
+        />
+      </div>
+    </button>
+  </div>
+</section>
+
+    <section id="game" class="game">
+  <div class="container">
+    <div class="game-container">
+      <h2 class="game-title">Game Description</h2>
+
+      <div class="game-wrap">
+        <div class="game-wrap-text">
+          <picture class="game-img">
+            <source
+              srcset="/assets/game-desk-1x-21a5a5c0.png 1x, /assets/game-desk-2x-61ee00c8.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/game-mob-1x-e7a6279b.png 1x, /assets/game-mob-2x-2ea43e2d.png 2x"
+              media="(max-width: 1439px)"
+            />
+            <img
+              src="./img/game/game-mob-1x.png 1x"
+              alt="Game features image"
+            />
+          </picture>
+          <div class="game-li-text">
+            <h5 class="game-li-text-title">Welcome to Aqua Match!</h5>
+            <p class="game-li-text-text">
+              Dive into an exciting world filled with match-3 puzzles and
+              vibrant aquatic life. Solve puzzles, collect resources, and create
+              the most stunning aquariums filled with unique fish species!
+              Decorate and enhance your aquarium space while making friends with
+              adorable underwater creatures.
+            </p>
+            <p class="game-li-text-text">
+              Are you ready for the ultimate aquatic adventure?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="key" class="key">
+  <div class="container">
+    <div class="key-container">
+      <h2 class="key-title">Key Features:</h2>
+
+      <div class="key-wrap-content">
+        <div class="key-wrap-content-dop key-wrap-dop-one">
+          <picture class="key-img key-img-one">
+            <source
+              srcset="/assets/key-two-desk-1x-e9d5b9ad.png 1x, /assets/key-two-desk-2x-0d945a75.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/key-two-mob-1x-fac9626f.png 1x, /assets/key-two-mob-2x-ae7cfd82.png 2x"
+              media="(max-width: 1439px)"
+            />
+            <img src="./img/key/key-two-mob-1x.png 1x" alt="Key game image" />
+          </picture>
+          <ul class="key-wrap-text-ul">
+            <li class="key-wrap-text-li key-text-one">
+              <h5 class="key-wrap-text-tatle">Fun Match-3 Gameplay:</h5>
+              <p class="key-wrap-text-p">
+                Solve challenging match-3 puzzles to earn rewards and unlock new
+                features.
+              </p>
+            </li>
+            <li class="key-wrap-text-li key-text-two">
+              <h5 class="key-wrap-text-tatle">Aquarium Customization:</h5>
+              <p class="key-wrap-text-p">
+                Decorate and design your dream underwater paradise.
+              </p>
+            </li>
+            <li class="key-wrap-text-li key-text-three">
+              <h5 class="key-wrap-text-tatle">Collect & Care for Fish:</h5>
+              <p class="key-wrap-text-p">
+                Unlock dozens of adorable fish with unique personalities.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="key-wrap-content-dop key-wrap-dop-two">
+          <picture class="key-img key-img-two">
+            <source
+              srcset="/assets/key-three-desk-1x-a682a373.png 1x, /assets/key-three-desk-2x-1142f0cd.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/key-three-mob-1x-d23a2a4b.png 1x, /assets/key-three-mob-2x-4a8477ef.png 2x"
+              media="(max-width: 1439px)"
+            />
+            <img src="./img/key/key-three-mob-1x.png 1x" alt="Key game image" />
+          </picture>
+          <ul class="key-wrap-text-ul">
+            <li class="key-wrap-text-li key-text-one">
+              <h5 class="key-wrap-text-tatle">Exciting Challenges & Events:</h5>
+              <p class="key-wrap-text-p">
+                Participate in special events and earn exclusive rewards.
+              </p>
+            </li>
+            <li class="key-wrap-text-li key-text-two">
+              <h5 class="key-wrap-text-tatle">Stunning Visuals & Effects:</h5>
+              <p class="key-wrap-text-p">
+                Enjoy immersive underwater graphics and relaxing animations.
+              </p>
+            </li>
+            <li class="key-wrap-text-li key-text-three">
+              <h5 class="key-wrap-text-tatle">Engaging Storyline:</h5>
+              <p class="key-wrap-text-p">
+                Follow an exciting underwater journey filled with fun characters
+                and challenges.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="faq" class="fag">
+  <div class="container">
+    <div class="fag-container">
+      <h2 class="fag-title">FAQ</h2>
+
+      <div class="circle-container">
+        <div class="circle">
+          <div class="circle-inner">
+            <div class="circle-front">
+              <img
+                width="100"
+                height="100"
+                class="key-circle-img"
+                src="/assets/faq-fish1-6bcc0312.png"
+                alt="Image fish"
+              />
+              <p class="key-circle-text">Is the game free to play?</p>
+            </div>
+            <div class="circle-back">
+              Yes! Aqua Match is free to play, with optional in-game purchases.
+            </div>
+          </div>
+        </div>
+
+        <div class="circle">
+          <div class="circle-inner">
+            <div class="circle-front">
+              <img
+                width="100"
+                height="112"
+                class="key-circle-img"
+                src="/assets/faq-fish2-068fd61f.png"
+                alt="Image fish"
+              />
+              <p class="key-circle-text">
+                Do I need an internet connection to play?
+              </p>
+            </div>
+            <div class="circle-back">
+              You can play most of the game offline, but events and leaderboards
+              require internet access.
+            </div>
+          </div>
+        </div>
+
+        <div class="circle">
+          <div class="circle-inner">
+            <div class="circle-front">
+              <img
+                width="100"
+                height="118"
+                class="key-circle-img"
+                src="/assets/faq-fish3-6fe70e81.png"
+                alt="Image fish"
+              />
+              <p class="key-circle-text">How do I unlock new fish?</p>
+            </div>
+            <div class="circle-back">
+              Complete match-3 puzzles and progress through levels to unlock new
+              fish species.
+            </div>
+          </div>
+        </div>
+
+        <div class="circle">
+          <div class="circle-inner">
+            <div class="circle-front">
+              <img
+                width="100"
+                height="109"
+                class="key-circle-img"
+                src="/assets/faq-fish4-24e1197e.png"
+                alt="Image fish"
+              />
+              <p class="key-circle-text">Can I customize my aquarium?</p>
+            </div>
+            <div class="circle-back">
+              Absolutely! Choose decorations, plants, and themes to create your
+              dream aquarium.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="player" class="player">
+  <div class="container">
+    <div class="player-container">
+      <h2 class="player-title">Player Reviews</h2>
+
+      <div class="player-wrap">
+        <div class="player-wrap-elem-img">
+          <picture class="game-img">
+            <source
+              srcset="/assets/player-desk-1x-eff6478b.png 1x, /assets/player-desk-2x-5ad9704b.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/player-mob-1x-a84d7af6.png 1x, /assets/player-mob-2x-776c6ae0.png 2x"
+              media="(max-width: 1439px)"
+            />
+            <img
+              src="./img/player/player-mob-1x.png 1x"
+              alt="Player reviews image"
+            />
+          </picture>
+        </div>
+
+        <div class="player-wrap-elem">
+          <h5 class="player-wrap-elem-title">Lily M., Puzzle Enthusiast:</h5>
+          <p class="player-wrap-elem-text">
+            "A perfect mix of match-3 and aquarium design! Love collecting all
+            the fish."
+          </p>
+        </div>
+
+        <div class="player-wrap-elem">
+          <h5 class="player-wrap-elem-title">Jake R., Casual Gamer:</h5>
+          <p class="player-wrap-elem-text">
+            "Relaxing, colorful, and fun! The aquariums look amazing, and the
+            puzzles are engaging."
+          </p>
+        </div>
+
+        <div class="player-wrap-elem">
+          <h5 class="player-wrap-elem-title">Emma T., Strategy Player:</h5>
+          <p class="player-wrap-elem-text">
+            "Challenging yet rewarding! Solving puzzles while decorating my
+            aquarium is so satisfying."
+          </p>
+        </div>
+
+        <div class="player-wrap-elem">
+          <h5 class="player-wrap-elem-title">Daniel P., Adventure Seeker:</h5>
+          <p class="player-wrap-elem-text">
+            "The animations and effects are stunning! Feels like a real
+            underwater world."
+          </p>
+        </div>
+
+        <div class="player-wrap-elem">
+          <h5 class="player-wrap-elem-title">Olivia S., Animal Lover:</h5>
+          <p class="player-wrap-elem-text">
+            "The fish are so cute! I love feeding them and watching them
+            interact."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="gallery" class="gallery">
+  <div class="container">
+    <div class="gallery-container">
+      <h2 class="gallery-title">Gallery</h2>
+
+      <div class="swiper reviewsSwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-1-1x-408d9d37.png 1x, /assets/gallery-1-1x-408d9d37.png 2x"
+              />
+              <img src="/assets/gallery-1-1x-408d9d37.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-2-1x-fb7393a5.png 1x, /assets/gallery-2-2x-609fe73e.png 2x"
+              />
+              <img src="/assets/gallery-2-1x-fb7393a5.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-3-1x-08c39b92.png 1x, /assets/gallery-3-2x-e04a1c45.png 2x"
+              />
+              <img src="/assets/gallery-3-1x-08c39b92.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-4-1x-febd2d23.png 1x, /assets/gallery-4-2x-297e5a4e.png 2x"
+              />
+              <img src="/assets/gallery-4-1x-febd2d23.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-5-1x-f5c71bb7.png 1x, /assets/gallery-5-2x-00107f1e.png 2x"
+              />
+              <img src="/assets/gallery-5-1x-f5c71bb7.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-6-1x-b784923b.png 1x, /assets/gallery-6-2x-ea1569a3.png "
+              />
+              <img src="/assets/gallery-6-1x-b784923b.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-7-1x-e9cff611.png 1x, /assets/gallery-7-2x-7f99cdad.png "
+              />
+              <img src="/assets/gallery-7-1x-e9cff611.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-8-1x-a8cc661c.png 1x, /assets/gallery-8-2x-4cfe6b7d.png "
+              />
+              <img src="/assets/gallery-8-1x-a8cc661c.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-9-1x-654649a2.png 1x, /assets/gallery-9-2x-e497f546.png "
+              />
+              <img src="/assets/gallery-9-1x-654649a2.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-10-1x-54fd4df6.png 1x, /assets/gallery-10-2x-549141b8.png "
+              />
+              <img src="/assets/gallery-10-1x-54fd4df6.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-11-1x-4807f8a8.png 1x, /assets/gallery-11-2x-60bf6aae.png "
+              />
+              <img src="/assets/gallery-11-1x-4807f8a8.png" alt="Gallery image" />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="swiper-slide-img">
+              <source
+                srcset="/assets/gallery-12-1x-012b83b5.png 1x, /assets/gallery-12-2x-a1c2ac3c.png "
+              />
+              <img src="/assets/gallery-12-1x-012b83b5.png" alt="Gallery image" />
+            </picture>
+          </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="wrapper-button">
+        <button class="swiper-button-prev">
+          <img
+            width="18"
+            height="34"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAABMCAYAAAAWcFVbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANpSURBVHgB7ZsxVlpBFIbvAws7n64AdQNmB6QznenSiUvICtQVJFmBpkwVrRIrsUuqmAWopEun2QDk/3H0ICDceXNn5nGO3zkcUIbDx7xh+O/jUkgNaYGiKI5w2cKfJS4n/X7/fQ8UUjPgutVoNM7lXnSUO0i/akqNgGwbst9kUpYs47JVG+HNzc1dLIETuRebCu4va7EkKDsYDI41YxuSmY2NjX2tLMadZp1hyuLqQDl8+KbLNsOesj3Ivs62rVWV5R/JhSF7hKuOcvgTWZJUOFSWLEkC8IFQYg/9ipttzXjsBpe4vB2XJdFn2Mmeu1wwFyfLmb2bdn/UXcKFGB/Z7ixZEm2GKetCTEszHqKfb25uOvPGRRGOJUvMl4SvLDjUyhJT4ZEs21I+5PD6+vpAPDBbEjOC93N4yxKTGXbBO7osCZ5hnyw7fMKi2Lu6ulKPn3i8BJBallQukVzi+qgcziz7BrvBiQRSaYYrBG9+el2KAd5vuopZ1kSWeM1wSPC2Qi1skWUtUAnXRZbMDPCWwduKZ2fYOnhbMXWXiBG8rZiY4ZhZ1oInwnWXJY9LInbwtmIonCJ4W1G4mf0lCbKsBY1ms/lBFkSWLOGNs6MZaJFlLeAaVu2deGHaoxCVZlmW25i9lmLs9urqqtze3l5IRih8AeGOzPgyZIR2bunmHVhZWfkCaa5lzWHPKj2s6Zz06SJIPxahFaVLSJ9JQoLDDzjG3rwniZiahyuEoK4L7unj5QMLFeAJn5gCnD1RwBfGTMKjIxFRFaHr6+vHENoVHVGLUNWJFJd7P4mO4fqPNdPqc2vYvr5jG+MRaSuGc/3vcJvkdimGeJ0MhHQ3t7T32csK0h1In8H5rxhQ6XSrp/QypN9B+iekexJI5fPDTvofbm4rhlO6s7a21sPjfksAQT0/ePIfmLk/Ln9o2OGL5OOkIsFNSjjMl5C+cNKaTB1UCJh0VXFt8o3FtSqRCwGzNjDuAikKAdO+tRSFgHmjXexCoDbtB6IsBKJ2pMQoBF5aaMaxLgSStoFZFAJJWxktCoHk/cOhhUCWhueQQiDpGh4H37Ae4GpfOTx/D7xvISB16IH3KQTYA1+Lpn2PQmA56xoex3Vn8cv4qaEpew/8NOb98CT7rwzGYbsNxXDzoaGJH+1d/o+fev8BExpjo7Fj4hEAAAAASUVORK5CYII="
+            class="swiper-button-prev-img"
+            alt="Button-prev"
+          />
+        </button>
+        <button class="swiper-button-next">
+          <img
+            width="18"
+            height="34"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAABMCAYAAAAWcFVbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN5SURBVHgB7Zs7VttAFIavJAo6BCswsAGyA+hIB126mB0kK4CsIMkKIGWqQBcqTJdUIQvwI106Oxuw8/+O7OPg1x3NnZGSw3eObNm+Ov40Ho3ulcaJgAZIkuQSywFe5liuh8Ph6x6QmpFQNk3Tb/JHdJYBpI/g/CA1Is2y7K3My5IcO3KH/TmUGpGORqOTFZ+Ppff3919KTUixDNYFYaeu9vb2XkkNyPI8P8bB1lDEHm9vb0u/37+XCqHwPYSbWN9UxB9WLZ0NwNbW1kdIsy/nim0qlc74UEjf/AvS2WSlpHQO6VuJSPL4jeJEcsdV0XHV6XTOJBLJojddpTHstbCc4qy4doj0JVn2AZxzdI+7Ir9YC4QfsByFlk6XfcAvpgBbTxRwx5iT8NeRgCSaoN3d3SsIaU/PvSJp6kkAUk1Qt9tt4um96GgUSVNDApBpAzF8fcYwxl/kUBHO/n/CYZLDpRiiFiaQblUt7SRMSkg3IX0L559igLMwcZTehPQLSH+FdE88KSVMCulfWD1WhFO6ubOz08N238WD0sIEX/4FLfejyD80nHAnuZ2UxEuY4Gd+gPR9Ia3Jqb0KAW9hwr7JA4t9VQIXAibChKNAjELATJjEKARMhUnoQkCV/JQhVCEQTJiEKASCChPrQkCVXvpgXQgEb+FZLAqB4C08i0UhYD6srcO3EIguTHwKgah9+DG4hHuBp3NlOO8IPKukhSe4FgJYDioVJi6FALpGHnWUWAZE+srQ6oXRj895S0ITi7ibqg86HnAXyvDxQVdZCzvKTs96lbRwWVm+iC4M2Us8NZXhc/lEVGFfWbIhEShy4k+iO0FMcuLTRZdsnxL4WYppDS6yrXW3HWpThEL0Q5EvrySIcChZYt4lSpT3b7SyxFQYrgeusrgWcSEOmHWJGVnN1R7iLEtMWpjTbGLIEu8W5vQabXo4/sIkOWu32+r4ue3Fg9iypHSJVGRc75ThzGWfYzS4Fk9KtXCJxNts/pvzQVcylzWbrOfUwj6JtxVqYYtc1gKVcF1kycoE3jLxtuL/mEITIvG2wnsamEsua8FfwnWXJdMuETrxtmIsHCPxtmLVHPhlVCZLVs2BX0SlsmRjzRz4KRa5rAWqOfB1kSX8l8Gq1G+cy9ZFllCYt/wXtfIk8W5JjUiZqPBSPNYn5QtvZrf4Xt3+JUN+AxM7dPQtrPaTAAAAAElFTkSuQmCC"
+            class="swiper-button-next-img"
+            alt="Button-next"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="footer-wrap">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="./privacy-policy.html" class="footer-nav-link"
+          >Privacy policy</a
+        >
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./terms.html" class="footer-nav-link">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./cookies.html" class="footer-nav-link">Cookies Policy</a>
+      </li>
+    </ul>
+
+    <p class="footer-text">All rights reserved blazemasterway.com | 2025</p>
+  </div>
+</footer>
+
+    <div id="modal-cookies" class="backdrop is-hidden" data-backdrop>
+  <div class="modal-cookies">
+    <div class="modal-cookies-text-wrap">
+      <p class="modal-cookies-text">
+        We use cookies to improve your experience on our website. By browsing
+        this website, you agree to our use of cookies
+      </p>
+    </div>
+    <div class="modal-cookies-dop-btn">
+      <button type="button" class="modal-cookies-decline">
+        Decline Cookies
+      </button>
+      <button type="button" class="modal-cookies-accept">Accept Cookies</button>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+  </body>
+</html>
